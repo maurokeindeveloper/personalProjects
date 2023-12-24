@@ -31,5 +31,6 @@ def links() -> rx.Component:
         link_button("Discord", 
                     "Canal para compartir con la comunidad",
                     "https://discord.com/mauro_on_an_island_06551"),
-        width="100%"
+        width="100%",
+        spacing=styles.Size.MEDIUM.value
         )
