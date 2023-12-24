@@ -1,6 +1,8 @@
 import reflex as rx 
 import datetime
 from styles.styles import Size as Size 
+from styles.colors import Color as Color 
+from styles.colors import TextColor as TextColor
 
 def footer() -> rx.Component:
     return rx.vstack(
@@ -13,6 +15,8 @@ def footer() -> rx.Component:
                 font_size=Size.MEDIUM.value),
         rx.text("BUILDING SOFTWARE FROM LA PLATA TO THE WORLD",
                 font_size=Size.MEDIUM.value,
-                margin_top="0px !important"),
+                margin_top=Size.ZERO.value),
                 margin_bottom=Size.BIG.value,
+                padding_bottom=Size.BIG.value,
+                color=TextColor.FOOTER.value
     )
