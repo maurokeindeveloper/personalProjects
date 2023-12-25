@@ -27,7 +27,7 @@ def links() -> rx.Component:
                     "Distintos proyectos en Humanidades Digitales y Desarrollo de Software", 
                     "icons/github.svg", 
                     "https://maurokein.github.io"),
-        link_button("Ensayos", 
+        link_button("Artículos", 
                     "Escritos sobre tecnocultura",
                     "icons/blog-solid.svg",  
                     "https://tecnocultura-unlp.github.io/blog_linktr.ee"),

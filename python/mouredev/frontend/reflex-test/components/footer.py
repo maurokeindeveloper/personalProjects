@@ -17,8 +17,11 @@ def footer() -> rx.Component:
                 font_size=Size.MEDIUM.value),
         rx.text("BUILDING SOFTWARE FROM LA PLATA TO THE WORLD",
                 font_size=Size.MEDIUM.value,
-                margin_top=Size.ZERO.value),
-                margin_bottom=Size.BIG.value,
-                padding_bottom=Size.BIG.value,
-                color=TextColor.FOOTER.value
+                margin_top=Size.ZERO.value
+        ),
+        margin_bottom=Size.BIG.value,
+        padding_bottom=Size.BIG.value,
+        padding_x=Size.SMALL.value,
+        spacing=Size.DEFAULT.value,
+        color=TextColor.FOOTER.value
     )

@@ -5,8 +5,8 @@ from styles.styles import Size as Size
 def link_sponsor(imagen: str, url: str) -> rx.Component:
     return rx.link(
         rx.image(
-            width="180px",
             height="110px",
+            width="200px",
             src=imagen
         ),
         href=url,

@@ -6,7 +6,7 @@ from styles.styles import Size as Size
 def sponsors() -> rx.Component:
     return rx.vstack(
         title("Colaboran"),
-        rx.hstack(
+        rx.responsive_grid(
             sponsor(
                 "filo-uba.jpg",
                 "http://www.filo.uba.ar"
@@ -15,7 +15,8 @@ def sponsors() -> rx.Component:
                 "fahce-unlp.png",
                 "https://www.fahce.unlp.edu.ar"
             ),
-            spacing=Size.DEFAULT.value
+            spacing=Size.DEFAULT.value,
+            columns=[1, 2]
         ),
         width="100%",
         align_items="center"
