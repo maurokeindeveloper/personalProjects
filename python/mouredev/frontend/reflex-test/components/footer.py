@@ -7,7 +7,9 @@ from styles.colors import TextColor as TextColor
 def footer() -> rx.Component:
     return rx.vstack(
         rx.image(
-            src="favicon.ico"
+            src="logo.jpg",
+            width=Size.VERY_BIG.value,
+            height=Size.VERY_BIG.value
         ),
         rx.link(f"©️ 2022-{datetime.date.today().year}-@maurokein by Mauro Kein",
                 href="https://maurokein.github.io",

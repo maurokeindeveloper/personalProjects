@@ -6,8 +6,8 @@ from styles.colors import TextColor as TextColor
 def navbar() -> rx.Component:
     return rx.hstack(
         rx.box(
-            rx.span("mauro", color=Color.PRIMARY.value),
-            rx.span("dev", color=Color.SECONDARY.value),
+            rx.span("kein", color=Color.PRIMARY.value),
+            rx.span("_dev", color=Color.SECONDARY.value),
             style=styles.navbar_title_style
         ),
         position="sticky",

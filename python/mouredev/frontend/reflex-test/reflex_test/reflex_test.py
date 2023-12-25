@@ -5,6 +5,7 @@ from views.links.links import links
 from components.footer import footer
 import styles.styles as styles
 from styles.styles import Size as Size
+from views.sponsors.sponsors import sponsors as sponsors
 
 class State(rx.State):
     pass
@@ -16,6 +17,7 @@ def index() -> rx.Component:
             rx.vstack(
                 header(),
                 links(),
+                sponsors(),
                 max_width=styles.MAX_WIDTH,
                 width="100%",
                 margin_y=styles.Size.BIG.value,
@@ -30,5 +32,10 @@ def index() -> rx.Component:
 app = rx.App(
     style=styles.BASE_STYLE
 )
-app.add_page(index)
+app.add_page(
+    index,
+    title="kein_dev | Programación y H++",
+    description="Mi nombre es Mauro Kein, me especializo en Desarrollo de Software con Python y en Humanidades Digitales",
+    image="logo.jpg"
+)
 app.compile()
