@@ -31,16 +31,23 @@ def header() -> rx.Component:
                 rx.hstack(
                     link_icon(
                         "icons/square-x-twitter.svg", 
-                        "https://x.com/maurokein"),
+                        "https://x.com/maurokein",
+                        "X-Twitter"
+                    ),
                     link_icon(
                         "icons/instagram.svg",
-                        "https://instagram.com/maurokein"),
+                        "https://instagram.com/maurokein",
+                        "Instagram"
+                    ),
                     link_icon(
                         "icons/facebook.svg",
-                        "https://facebook.com/maurokein"),
+                        "https://facebook.com/maurokein",
+                        "Facebook"    
+                    ),
                     link_icon(
                         "icons/linkedin.svg",
-                        "https://linkedin.com/in/maurokein"
+                        "https://linkedin.com/in/maurokein",
+                        "Linkedin"
                     ),
                     spacing=Size.LARGE.value
                 ),

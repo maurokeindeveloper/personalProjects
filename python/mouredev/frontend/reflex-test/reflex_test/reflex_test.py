@@ -7,9 +7,11 @@ import styles.styles as styles
 from styles.styles import Size as Size
 from views.sponsors.sponsors import sponsors as sponsors
 
-class State(rx.State):
-    pass
+""" BACKEND-SIDE """
+""" class State(rx.State):
+    pass """
 
+""" FRONTEND-SIDE """
 def index() -> rx.Component:
     return rx.box(
         navbar(),

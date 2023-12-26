@@ -9,7 +9,8 @@ def footer() -> rx.Component:
         rx.image(
             src="logo.jpg",
             width=Size.VERY_BIG.value,
-            height=Size.VERY_BIG.value
+            height=Size.VERY_BIG.value,
+            alt="Logotipo de kein_dev. Una \"eme\" y una \"ka\" entrelazadas."
         ),
         rx.link(f"©️ 2022-{datetime.date.today().year}-@maurokein by Mauro Kein",
                 href="https://maurokein.github.io",
